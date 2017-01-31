@@ -4,7 +4,8 @@ from queries.peopleKeywordCount import peopleKeywordCount
 from queries.createPeopleKeywordQuery import createPeopleKeywordQuery
 
 # get the year to query from the user
-year = sys.argv[1]
+year = input("Enter year to query: ")
+year = str(year)
 
 # there are too many results to get all at once
 # here we ask the database how many results there 
