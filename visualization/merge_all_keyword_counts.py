@@ -1,6 +1,9 @@
 # empty diction, which will eventually be our results
 results = {}
 
+# data directory
+directory = "data_keywords_count/"
+
 # the collection of Keyword Dictionary CSV files we want to work with
 files = ["2000keyDict.csv", "2001keyDict.csv","2002keyDict.csv", "2003keyDict.csv",
          "2004keyDict.csv", "2005keyDict.csv", "2006keyDict.csv", "2007keyDict.csv",
@@ -31,7 +34,7 @@ for line in keywordFile:
         
         # loop over all the keyword dictionary files
         for f in files:
-            keyDictFile = open(f, "r")
+            keyDictFile = open(directory + f, "r")
         
             # get the year from the filename
             year = int(f[0:4])
@@ -65,8 +68,8 @@ outFile = open("all_agu_keyword_counts_all_years.csv", "w")
 # iterating over a dictionary changed from Python 2 to Python 3
 # here we list both ways so this code will run in either environment, just uncomment
 
-for key, value in results.iteritems(): # python 2.x
-#for key, value in results.items(): # python 3.x
+#for key, value in results.iteritems(): # python 2.x
+for key, value in results.items(): # python 3.x
 
     outputLine = str(key)
     

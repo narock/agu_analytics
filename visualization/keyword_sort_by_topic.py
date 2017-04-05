@@ -16,7 +16,7 @@ start = int(input("Enter starting keyword value: "))
 end = int(input("Enter ending keyword value: "))
 
 # setup output JSON
-outFile = open("test.json", "w")
+outFile = open("keyword_timeseries.json", "w")
 outFile.write("{   ")
 counter = 0
 
