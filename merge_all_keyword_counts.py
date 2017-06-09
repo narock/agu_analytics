@@ -2,13 +2,14 @@
 results = {}
 
 # data directory
-directory = "data_keywords_count/"
+directory = "/Users/narock/University/Projects/agu_analytics/data_keywords_count/"
 
 # the collection of Keyword Dictionary CSV files we want to work with
 files = ["2000keyDict.csv", "2001keyDict.csv","2002keyDict.csv", "2003keyDict.csv",
          "2004keyDict.csv", "2005keyDict.csv", "2006keyDict.csv", "2007keyDict.csv",
          "2008keyDict.csv", "2009keyDict.csv", "2010keyDict.csv", "2011keyDict.csv",
-         "2012keyDict.csv", "2013keyDict.csv", "2014keyDict.csv", "2015keyDict.csv"] 
+         "2012keyDict.csv", "2013keyDict.csv", "2014keyDict.csv", "2015keyDict.csv",
+         "2016keyDict.csv"] 
 
 # the range of keywords we're interested in
 # for instance, 1600 to 1699 if we want to limit the results to Global Change
@@ -18,7 +19,7 @@ end = int(input("Enter ending keyword value: "))
 
 # the CSV file containing all possible AGU keywords
 # we use this for reference
-keywordFile = open("all_agu_keywords.csv", "r")
+keywordFile = open("./agu_data/all_agu_keywords.csv", "r")
 for line in keywordFile:
 
     # each line has three parts, we only care about the second value - keyword #
@@ -63,7 +64,7 @@ for line in keywordFile:
                 results[keyword] = v + "," + str(year) + ":" + str(count)
 
 # ok, now we have all the data, let's output it to another CSV file
-outFile = open("all_agu_keyword_counts_all_years.csv", "w")
+outFile = open("./agu_data/all_agu_keyword_counts_all_years.csv", "w")
 
 # iterating over a dictionary changed from Python 2 to Python 3
 # here we list both ways so this code will run in either environment, just uncomment
