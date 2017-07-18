@@ -1,0 +1,13 @@
+{
+"EDUCATION": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Elementary and secondary education": [0,0,0,0,1,0,2,1,0,0,0,0,0,0,0,0,0],
+"Post-secondary education": [0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0],
+"Informal education": [0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0],
+"Curriculum and laboratory design": [0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0],
+"Teaching methods": [0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0],
+"Teacher training": [0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0],
+"Evaluation and assessment": [0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0],
+"Instructional tools": [0,0,0,0,0,1,1,1,1,1,0,0,1,0,0,0,0],
+"Geoscience education research": [0,0,0,0,1,3,1,1,1,1,0,1,0,1,0,29,0],
+"Diversity": [0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0]
+}

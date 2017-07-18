@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+
+#year {
+  text-align: center;
+  font-size: 200%;
+}
+
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+    </style>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101488706-1', 'auto');
+  ga('send', 'pageview');
+
+    </script>
+
+  </head>
+  <body>
+<div style="padding:20px">
+<p>This set of interactive visualizations subsets the AGU network to include only those people that have attended an ESIP meeting. Each node (colored dot)
+represents a person who presented at AGU in that year and also had attended a prior ESIP meeting. Nodes connected by an edge indicate that those people
+collaborated on an AGU presentation. The colors of the nodes indicate the primary topic area to which that person most often presents. In the case of a tie, we simply select the first topic area in the list. The graph is 
+interactive. Hovering your mouse over a node will pop up the email address of the person. Clicking a node and dragging allows you to reorient the graph.
+
+<br/><br/>The "Next" and "Previous" buttons allow you to step forward and backward in time, respectively, to see how ESIP collaboration changes with time
+
+<br/><br/><div id="colors"></div>
+
+</p> 
+</div>
+<div id="year"></div>
+<svg width="960" height="600"></svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+var i;
+var svg = d3.select("svg"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height");
+var year = 2010;
+
+newViz(year);
+
+function newViz (value) {
+
+  var link = '<a href="data/esip/esip_person_finder_' + value + '.csv">here</a>';
+  document.getElementById('colors').innerHTML = "This year's data file can be downloaded " + link + " if you'd like match node colors to topic areas";
+
+  var line;
+  next = value+1;
+  previous = value-1;
+  if ( value == "2010" ) {
+      line = value + ' <button onclick="newViz(' + next + ')">Next</button>';
+  } 
+  if ( value > "2010" && value <= "2015") {
+      line = ' <button onclick="newViz(' + previous + ')">Previous</button> ' + value + 
+       ' <button onclick="newViz(' + next + ')">Next</button>';
+  }
+  if ( value == "2016" ) {
+      line = ' <button onclick="newViz(' + previous + ')">Previous</button> ' + value; 
+  }
+  document.getElementById('year').innerHTML = line;
+  svg.selectAll("*").remove();
+  viz( 'data/esip/esip_network_map_' + value + '.json', value );
+
+}
+
+function viz (f, year) {
+
+svg = d3.select("svg"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height");
+
+var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+var simulation = d3.forceSimulation()
+    .force("link", d3.forceLink().id(function(d) { return d.id; }))
+    .force("charge", d3.forceManyBody().strength(-3))
+    .force("center", d3.forceCenter(width / 2, height / 2));
+
+d3.json(f, function(error, graph) {
+  if (error) throw error;
+
+  if ( year > "2010" ) {
+  
+    d3.timeout( function() {
+
+      for (var i = 0, n = Math.ceil(Math.log(simulation.alphaMin()) / 
+        Math.log(1 - simulation.alphaDecay())); i < n; ++i) {
+          simulation.tick();
+      }
+    });
+  }
+
+  var link = svg.append("g")
+    .attr("class", "links")
+    .selectAll("line")
+    .data(graph.links)
+    .enter().append("line")
+      .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
+
+  var node = svg.append("g")
+      .attr("class", "nodes")
+      .selectAll("circle")
+      .data(graph.nodes)
+      .enter().append("circle")
+      .attr("r", 5)
+      .attr("fill", function(d) { return color(d.group); })
+      .call(d3.drag()
+          .on("start", dragstarted)
+          .on("drag", dragged)
+          .on("end", dragended));
+
+  node.append("title")
+      .text(function(d) { return d.id; });
+
+  simulation
+      .nodes(graph.nodes)
+      .on("tick", ticked);
+
+  simulation.force("link")
+      .links(graph.links);
+
+  function ticked() {
+    link
+        .attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+
+    node
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+  }
+});
+
+function dragstarted(d) {
+  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+  d.fx = d.x;
+  d.fy = d.y;
+}
+
+function dragged(d) {
+  d.fx = d3.event.x;
+  d.fy = d3.event.y;
+}
+
+function dragended(d) {
+  if (!d3.event.active) simulation.alphaTarget(0);
+  d.fx = null;
+  d.fy = null;
+}
+
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+"GEOCHRONOLOGY": [0,0,0,0,0,1,3,3,8,2,5,5,1,3,0,0,0],
+"Quaternary geochronology": [0,0,0,0,0,10,17,29,49,38,23,22,25,30,65,27,43],
+"Sidereal geochronology": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Radioisotope geochronology": [0,0,0,0,0,7,12,7,13,8,2,4,6,3,19,0,0],
+"Isotopic disequilibrium dating": [0,0,0,0,0,3,4,6,4,6,0,1,2,3,0,0,0],
+"Chemical and biological geochronology": [0,0,0,0,0,1,0,0,0,1,2,2,2,1,0,0,0],
+"Geomorphological geochronology": [0,0,0,0,0,0,1,6,0,1,2,0,3,2,0,0,0],
+"Correlative geochronology": [0,0,0,0,0,3,1,1,1,2,1,3,0,0,0,0,0],
+"Thermochronology": [0,0,0,0,0,0,0,0,0,1,0,2,2,0,0,0,0],
+"Tephrochronology": [0,0,0,0,0,0,5,0,1,5,2,2,3,2,0,0,0],
+"Cosmogenic-nuclide exposure dating": [0,0,0,0,0,1,7,20,6,11,4,6,6,11,0,0,0],
+"Extinct radionuclide geochronology": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Planetary and lunar geochronology": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Sedimentary geochronology": [0,0,0,0,0,5,4,3,6,3,5,9,10,8,0,30,29],
+"Instruments and techniques": [0,0,0,0,0,0,0,1,3,1,1,1,0,1,0,27,0],
+"General or miscellaneous": [0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0]
+}

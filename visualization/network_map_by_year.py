@@ -1,3 +1,203 @@
+def getTopic ( k ):
+
+    r = ""
+    if ( k == 0 ):
+         r = "Atmospheric Composition and Structure"  
+    if ( k == 1 ):
+         r = "Biogeosciences"
+    if ( k == 2 ):
+         r = "Computational Geophysics"
+    if ( k == 3 ):
+         r = "Electromagnetics"
+    if ( k == 4 ):
+         r ="Cryosphere"
+    if ( k == 5 ):
+         r = "Education"
+    if ( k == 6 ):
+         r = "Exploration Geophysics"
+    if ( k == 7 ):
+         r = "Geochemistry"
+    if ( k == 8 ):
+         r = "Geochronology"
+    if ( k == 9 ):
+         r = "Geodesy and Gravity"
+    if ( k == 10 ):
+         r = "Geomagnetism and Paleomagnetism"
+    if ( k == 11 ):
+         r = "Global Change"
+    if ( k == 12 ):
+         r = "History of Geophysics"
+    if ( k == 13 ):
+         r = "Hydrology"
+         
+    if ( k == 48 ): # 
+         r = "Community Modeling Frameworks"
+    if ( k == 49 ): # 
+         r = "Community Standards"
+    if ( k == 50 ): # 
+         r = "Computational Models and Algorithms"
+    if ( k == 51 ): # Cyberinfrastructure 
+         r = "Cyberinfrastructure"
+    if ( k == 52 ): # Data assimilation, integration and fusion
+         r = "Data Assimilation; Integration; and Fusion"
+    if ( k == 53 ): # Data management, preservation, rescue 
+         r = "Data Management; Preservation Rescue"
+    if ( k == 54 ): # Data mining
+         r = "Data Mining"
+    if ( k == 55 ): # Data and information discovery
+         r = "Data and Information Discovery"
+    if ( k == 56 ): # Decision analysis
+         r = "Decision Analysis"
+    if ( k == 57 ): # Emerging informatics technologies 
+         r = "Emerging Informatics Techniques"
+    if ( k == 58 ): # Forecasting
+         r = "Forecasting"
+    if ( k == 59 ): # Formal logics and grammars 
+         r = "Formal Logics and Grammars"
+    if ( k == 60 ): # Geospatial 
+         r = "Geospatial"
+    if ( k == 61 ): # GIS science 
+         r = "GIS science"
+    if ( k == 62 ): # Data and information governance
+         r = "Data and Information Governance"
+    if ( k == 63 ): # High-performance computing 
+         r = "High-performance Computing"
+    if ( k == 64 ): # International collaboration  
+         r = "International Collaboration"
+    if ( k == 65 ): # Interoperability
+         r = "Interoperability"
+    if ( k == 66 ): # Knowledge representation and knowledge bases 
+         r = "Knowledge Representation and Knowledge Bases"
+    if ( k == 67): # Machine-to-machine communication 
+         r = "Machine-to-Machine Communication"
+    if ( k == 68 ): # Machine learning 
+         r = "Machine Learning"
+    if ( k == 69 ): # Markup languages   
+         r = "Markup Languages"
+    if ( k == 70 ): # Metadata 
+         r = "Metadata"
+    if ( k == 71 ): # Metadata: Provenance  
+         r = "Metadata: Provenance"
+    if ( k == 72 ): # Metadata: Quality 
+         r = "Metadata: Quality"
+    if ( k == 73 ): # Modeling  
+         r = "Modeling"
+    if ( k == 74 ): # Natural language processing 
+         r = "Natural Language Processing"
+    if ( k == 75 ): # Numerical algorithms
+         r = "Numerical Algorithms"
+    if ( k == 76 ): # Ontologies  
+         r = "Ontologies"
+    if ( k == 77 ): # Portals and user interfaces
+         r = "Portals and User Interfaces"
+    if ( k == 78 ): # Query languages for science, markup languages, ontologies   
+         r = "Query Languages for science; markup languages; ontologies"
+    if ( k == 79 ): # Real-time and responsive information delivery 
+         r = "Real-time and responsive information delivery"
+    if ( k == 80 ): # Rules and logic 
+         r = "Rules and Logic"
+    if ( k == 81 ): # Scientific reasoning/inference  
+         r = "Scientific reasoning and inference"
+    if ( k == 82 ): # Semantic web and semantic integration
+         r = "Semantic Web and Sematic Integration"
+    if ( k == 83 ): # Sensor web   
+         r = "Sensor Web"
+    if ( k == 84 ): # Social networks
+         r = "Social Networks"
+    if ( k == 85 ): # Software tools and services 
+         r = "Software Tools and Services"
+    if ( k == 86 ): # Software re-use  
+         r = "Software Re-Use"
+    if ( k == 87 ): # Spatial analysis and representation 
+         r = "Spatial Analysis and Representation"
+    if ( k == 88 ): # Standards    
+         r = "Standards"
+    if ( k == 89 ): # Statistical methods: Descriptive
+         r = "Statistical Methods: Descriptive"
+    if ( k == 90 ): # Statistical methods: Inferential  
+         r = "Statistical Methods: Inferential"
+    if ( k == 91 ): # Temporal analysis and representation 
+         r = "Temporal Analysis and Representation"
+    if ( k == 92 ): # Uncertainty 
+         r = "Uncertainty"
+    if ( k == 93 ): # Virtual globes     
+         r = "Virtual Globes"
+    if ( k == 94 ): # Visualization and portrayal 
+         r = "Visualization and Portrayal"
+    if ( k == 95 ): # Web Services 
+         r = "Web Services"
+    if ( k == 96 ): # Workflow
+         r = "Workflow"
+            
+    if ( k == 15 ):
+         r = "Interplanetary Physics"
+    if ( k == 16 ):
+         r = "Ionosphere"
+    if ( k == 17 ):
+         r = "Magnetospheric Physics"
+    if ( k == 18 ):
+         r = "Marine Geology and Geophysics"
+    if ( k == 19 ): # 20
+         r = "Mathematical Geophysics"
+    if ( k == 20 ):
+         r = "Atmospheric Processes"
+    if ( k == 21 ):
+         r = "Mineralogy and Petrology"
+    if ( k == 22 ):
+         r = "Mineral Physics"
+    if ( k == 23 ):
+         r = "Oceanography: General"
+    if ( k == 24 ):
+        r = "Natural Hazards"
+    if ( k == 25 ):
+        r = "Nonlinear Geophysics"
+    if ( k == 26 ):
+        r = "Oceanography: Physical"
+    if ( k == 27 ):
+        r = "Oceanography: Biological and Chemical"
+    if ( k == 28 ):
+        r = "Paleoceanography"
+    if ( k == 29 ): # 30
+        r = "Physical Properties of Rocks"
+    if ( k == 30 ):
+        r = "Planetary Sciences: Astrobiology"
+    if ( k == 31 ):
+        r = "Planetary Sciences: Solid Surface Planets"
+    if ( k == 32 ):
+        r = "Planetary Sciences: Fluid Planets"
+    if ( k == 33 ):
+        r = "Planetary Sciences: Comets and Small Bodies"
+    if ( k == 34 ):
+        r = "Planetary Sciences: Solar System Objects"
+    if ( k == 35 ):
+        r = "Policy Sciences"
+    if ( k == 36 ):
+        r = "Public Issues"
+    if ( k == 37 ):
+        r = "Radio Science"
+    if ( k == 38 ):
+        r = "Seismology"
+    if ( k == 39 ): # 40
+        r = "Solar Physics; Astrophysics; and Astronomy"
+    if ( k == 40 ):
+        r = "Space Plasma Physics"
+    if ( k == 41 ):
+        r = "Space Weather"
+    if ( k == 42 ):
+        r = "Structural Geology"
+    if ( k == 43 ):
+        r = "Tectonophysics"
+    if ( k == 44 ):
+        r = "Volcanology"
+    if ( k == 45 ):
+        r = "Geographic Location"
+    if ( k == 46 ):
+        r = "Information Related to Geologic Time"
+    if ( k == 47 ): # 48
+        r = "General or Miscellaneous"
+
+    return r
+            
 def coAuthorCounts( nameList ):
 
     names = nameList.split(",")
@@ -6,8 +206,8 @@ def coAuthorCounts( nameList ):
     
 def keywordCount( files, abstracts ):
 
-    keywords = []
-    abstractsSeen = []
+    #keywords = []
+    abstractsSeen = {}
     for f in files:
 
         inFile = open(f, "r")
@@ -17,14 +217,27 @@ def keywordCount( files, abstracts ):
             year = parts[0].strip()
             abstract = parts[1].strip()
             k = parts[2].strip()
-
-            if ( (abstract in abstracts) and (abstract not in abstractsSeen) ):
-                keywords.append(k)
-                abstractsSeen.append(abstract)
-
+                    
+            if ( abstract in abstracts ):
+                if ( abstract in abstractsSeen ):
+                    l = abstractsSeen[abstract]
+                    if ( k not in l ):
+                        l.append(k)
+                        abstractsSeen[abstract] = l
+                else:
+                    l = [k]
+                    abstractsSeen[abstract] = l
+                #keywords.append(k)
+                #abstractsSeen.append(abstract)
+        
     counts = [0] * 97
-    for keyword in keywords:
-        p = keyword.split("/")
+    #for keyword in keywords:
+    for key, value in abstractsSeen.iteritems():
+        #p = keyword.split("/")
+        #l = len(p)
+        #k = int(p[l-1])
+      for i in value:
+        p = i.split("/")
         l = len(p)
         k = int(p[l-1])
         # from http://abstractsearch.agu.org/keywords/
@@ -225,7 +438,7 @@ def keywordCount( files, abstracts ):
             
     max_value = max(counts)
     group = counts.index(max_value)    
-    return group
+    return group, max_value, counts
     
 def getAbstractsForEmail( files, email ):
 
@@ -298,6 +511,7 @@ trulyUniquePeople = []
 personEmail = {}
 
 # read the co-author files
+yrToUse = str(input("Enter year: "))
 dr = "/Users/narock/University/Projects/agu_analytics/esip_summer_2017/MeetingAttendeeData/csv/"
 file1 = dr + "results/results_summer/coauthorResults.csv"
 file2 = dr + "results/results_winter/coauthorResults.csv"
@@ -317,7 +531,7 @@ for f in files:
         email = parts[2].strip()
         coauthorEmail = parts[3].strip()
 
-        if ( year == "2011" ):
+        if ( year == yrToUse ):
 
             # have we seen this abstract before, if so then we don't need to do this again
             if ( abstract not in abstracts ):
@@ -360,11 +574,15 @@ for f in files:
     currentAbstracts = []
 
 # JSON output
-out = dr+"results/network_map.json"
+out = dr+"results/esip_network_map_" + yrToUse + ".json"
 outFile = open(out, "w")
 
 json = "{\n" + "\"nodes\": [\n"
 outFile.write(json)
+
+# person finder output file
+pfLoc = dr + "results/esip_person_finder_" + yrToUse + ".csv"
+pfFile = open(pfLoc, "w")
 
 # iterate over all the unique people
 for p in uniquePeople:
@@ -375,7 +593,14 @@ for p in uniquePeople:
     person = personEmail[p]
     ab = getAbstractsForEmail( files, p )
     # go to the keywords file and get all the keywords, the most often used one is our topic
-    color = keywordCount( keyFiles, ab )
+    color, max_value, allCounts = keywordCount( keyFiles, ab )
+
+    # output to our person finder file
+    myCounter = 0
+    for i in allCounts:
+        if ( i != 0 ):
+            pfFile.write( person + "," + p + "," + getTopic(myCounter) + "," + str(i) + "\n")
+        myCounter = myCounter + 1
 
     # since we lack unique IDs like ORCID, we end up with the same name assigned to
     # multiple email addresses. e.g. Tom Narock to tnarock@marymount.edu and Thomas.W.Narock@nasa.gov
@@ -386,6 +611,7 @@ for p in uniquePeople:
         trulyUniquePeople.append(p)
         
 outFile.write("],\n" + "\"links\": [\n")
+pfFile.close()
 
 # output people connection JSON
 for key, value in coauthors.iteritems():

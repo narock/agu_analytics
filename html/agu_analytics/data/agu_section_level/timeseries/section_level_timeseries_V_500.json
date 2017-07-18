@@ -1,0 +1,16 @@
+{
+"COMPUTATIONAL GEOPHYSICS": [0,0,0,0,0,0,0,2,2,1,0,0,1,0,0,0,0],
+"Agent-based models": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Cellular automata": [0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0],
+"Data analysis: algorithms and implementation": [0,0,0,0,0,0,1,0,1,1,0,3,0,4,0,0,0],
+"Data management": [0,0,0,0,0,1,0,1,0,2,0,0,0,1,0,0,0],
+"Data presentation and visualization": [0,0,0,0,0,1,0,1,1,2,0,0,1,0,0,0,0],
+"Hardware solutions": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Image processing": [0,0,0,0,0,0,0,1,2,1,2,1,2,2,0,0,0],
+"Modeling": [0,0,0,0,0,8,13,16,27,14,13,16,8,20,0,0,0],
+"Model verification and validation": [0,0,0,0,0,6,2,0,2,0,0,2,0,1,0,0,0],
+"Neural networks fuzzy logic machine learning": [0,0,0,0,0,0,0,1,1,0,1,2,0,0,0,44,0],
+"Numerical solutions": [0,0,0,0,0,2,4,3,11,2,0,1,1,6,0,0,0],
+"Instruments and techniques": [0,0,0,0,0,1,0,0,0,0,0,2,1,0,0,0,0],
+"General or miscellaneous": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+}

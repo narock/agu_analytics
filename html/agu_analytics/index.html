@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <!-- Load minified version of Bootstract -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Load jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101488706-1', 'auto');
+  ga('send', 'pageview');
+
+    </script>
+
+  </head>
+  <body>
+
+    <div class="container" style="padding-top:50px">
+      
+      <p><a href="https://en.wikipedia.org/wiki/Scientometrics">Scientometrics</a> is the science of science. Scientometric research areas include 
+        measurements of impact, mapping of scientific fields, and the production of indicators for use in policy and management. This site leverages 
+        scientometric principles to study the <a href="http://agu.org">American Geophysical Union (AGU)</a>. Using the 
+        <a href="http://abstractsearch.agu.org/about/lod">AGU's Linked Data Abstract Browser</a> we have created a number of visualizations and analytics 
+        tools to explore the historical AGU network.</p>
+
+      <p>The data and code used in this project is publicly available at our <a href="https://osf.io/trxp4">Open Science Framework site</a>. Questions/comments/suggestions? Reach out to us at tnarock AT ndm.edu or @tnarock on Twitter.</p>
+
+      <div class="panel panel-default">
+        <h3>&nbsp;&nbsp;AGU Analytics</h3>
+        <div class="panel-body">
+          <button type="button" class="btn btn-lg btn-primary" onclick="location.href = 'agu.html';">
+             Organizational Level
+          </button>
+          <button type="button" class="btn btn-lg btn-primary" onclick="location.href = 'section_level_heatmap.html';">
+             By Section
+          </button>
+          <button type="button" class="btn btn-lg btn-primary" onclick="location.href = 'topic_level_heatmap.html';">
+             By Topic
+          </button>
+        </div>
+      </div>
+
+      <br/><br/>
+      <p>Part of our analysis is based on uniquely identifying people. However, people can change affiliations and email addresses. In addition, varying user interfaces
+	lead to varying information being collected. For example, some systems require first initial and last name while others use full names. Even within one system,
+	 such as AGU, people identify themselves differently over time. Automatically identifying multiple instances of the same person in our software is a challenge. To
+	 help with this, we've set up a simple form where you can tell us if you've used multiple email addresses over the years and also if you have an ORCID id. Supplying
+ 	 these simple bits of information will go a long way in automating person disambiguation</p>
+      <div class="panel panel-default">
+	<h3>&nbsp;&nbsp;Disambiguation Form</h3>
+	<div class="panel-body">
+	 <button type="button" class="btn btn-lg btn-primary" onclick="location.href = 'orcid_form.html';">
+	   ORCID/Email Form
+	 </button>
+	</div>
+      </div>
+
+      <br/><br/>
+      <p>Combining AGU data with data from other organizations allows us to explore the impact those groups have had on AGU and geoscience. In this 
+       section we explore how the <a href="http://esipfed.org">Earth Science Information Partners (ESIP)</a> have impacted AGU.</p>
+      <div class="panel panel-default">
+        <h3>&nbsp;&nbsp;ESIP-AGU Connection</h3>
+        <div class="panel-body">
+          <button type="button" class="btn btn-lg btn-primary" onclick="location.href = 'esip_network.html';">
+             Co-authorship Network
+          </button>
+          <button type="button" class="btn btn-lg btn-primary" onclick="location.href = 'esip_key_heatmap.html';">
+             Keyword Heatmap
+          </button>
+          <button type="button" class="btn btn-lg btn-primary" onclick="location.href = 'esip_sec_heatmap.html';">
+             Section Heatmap
+          </button>
+          <button type="button" class="btn btn-lg btn-primary" onclick="location.href = 'esip_person_finder.html';">
+             Person Finder
+          </button>
+        </div>
+      </div>
+      
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+"MINERAL PHYSICS": [0,0,0,0,1,0,0,0,0,0,1,2,2,0,0,0,0],
+"Creep and deformation": [0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0],
+"Defects": [0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0],
+"Elasticity and anelasticity": [0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0],
+"Electrical properties": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Equations of state": [0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0],
+"High-pressure behavior": [0,0,0,0,0,0,0,0,1,1,1,2,0,0,0,0,0],
+"NMR  Mossbauer spectroscopy  and other magnetic techniques": [0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0],
+"Optical  infrared  and Raman spectroscopy": [0,0,0,0,1,0,0,0,0,0,0,2,0,1,0,0,0],
+"Physical thermodynamics": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Shock wave experiments": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Surfaces and interfaces": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Thermal expansivity": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"X-ray  neutron  and electron spectroscopy and diffraction": [0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0],
+"Instruments and techniques": [0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0],
+"General or miscellaneous": [0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0]
+}

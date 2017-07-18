@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div style="padding:50px">
+		<p>
+		Help us disambiguate the multiple sources of people data. Some datasets use first initial and last name. Others use full names. When combining these
+		data for our analytics it's difficult to infer if two people who appear similar are in fact the same. We're using <a href="https://orcid.org">ORCID</a> 
+		identifiers to uniquely identify the people in our dataset. If you have an ORCID please supply it below. In addition, email addresses can also be helpful
+		in identifying people. However, email addresses can change. Please also supply a list of email addresses you may have used in the past. The data you supply
+		will be used by our software to automatically align people across datasets.
+		</p>
+		</div>
+		<form class="form-horizontal" role="form" action="orcid_form.php" method="get">
+			<div class="form-group">
+    			<label class="control-label col-sm-2" for="fname">First Name:</label>
+    			<div class="col-sm-6">
+      				<input type="text" class="form-control" name="fname" id="fname">
+	    		</div>
+	    	</div>
+	  		<div class="form-group">
+	    		<label class="control-label col-sm-2" for="lname">Last Name:</label>
+    			<div class="col-sm-6">
+      				<input type="text" class="form-control" name="lname" id="lname">
+    			</div>
+    		</div>
+		<div>
+			<div class="form-group">
+			<label class="control-label col-sm-2" for="email">Email Addresses:</label>
+			<div class="col-sm-6">
+				<input type="text" class="form-control" name="email" id="email" placeholder="Comma separated list of email addresses you've used">
+			</div>
+		</div>
+    		<div class="form-group">
+    			<label class="control-label col-sm-2" for="orcid">Orcid ID:</label>
+	    		<div class="col-sm-6">
+      				<input type="text" class="form-control" id="orcid" name="orcid" placeholder="Everything after the orcid.org/ e.g. 0000-0002-9785-4496">
+    			</div>
+    		</div>
+  			<div class="form-group"> 
+    			<div class="col-sm-offset-2 col-sm-10">
+      				<button type="submit" class="btn btn-default">Submit</button>
+    			</div>
+  			</div>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,17 @@
+{
+"SPACE WEATHER": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Geomagnetically induced currents": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Engineering for hazard mitigation": [0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0],
+"Forecasting": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Impacts on technological systems": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Impacts on humans": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Ionospheric effects on radio waves": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Ionospheric storms": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Magnetic storms": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Models": [0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0],
+"Policy": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Satellite drag": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Solar effects": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Space radiation environment": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"General or miscellaneous": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+}
