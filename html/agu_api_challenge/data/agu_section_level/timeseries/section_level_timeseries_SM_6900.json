@@ -1,0 +1,21 @@
+{
+"RADIO SCIENCE": [0,0,1,0,1,1,0,0,0,0,0,0,1,0,0,0,0],
+"Electromagnetic noise and interference": [0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0],
+"Interferometry": [1,2,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0],
+"Ionospheric physics": [0,0,0,1,1,6,1,2,3,1,0,2,0,2,0,0,0],
+"Ionospheric propagation": [0,0,2,1,0,0,3,0,0,0,0,0,0,0,0,0,0],
+"Magnetospheric physics": [5,8,6,2,1,7,5,8,9,1,6,6,4,2,0,0,75],
+"Nonlinear phenomena": [0,0,1,0,0,2,0,0,0,0,0,0,1,0,0,0,0],
+"Radar astronomy": [1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0],
+"Radar atmospheric physics": [0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0],
+"Radio astronomy": [2,0,1,2,1,0,2,0,3,3,1,4,1,1,0,0,0],
+"Radio oceanography": [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Radio wave propagation": [2,6,1,1,3,1,3,8,2,4,4,7,3,3,0,0,0],
+"Remote sensing": [3,1,2,2,1,5,1,1,5,4,0,5,3,0,0,0,0],
+"Signal processing": [1,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0],
+"Space and satellite communication": [0,0,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0],
+"Tomography and imaging": [1,1,0,0,1,2,1,1,0,0,0,0,0,0,0,0,0],
+"Waves in plasma": [2,5,6,5,8,6,5,8,10,7,6,11,5,5,0,0,0],
+"Instruments and techniques": [1,4,0,2,0,0,17,1,0,1,1,0,0,0,0,0,0],
+"General or miscellaneous": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+}

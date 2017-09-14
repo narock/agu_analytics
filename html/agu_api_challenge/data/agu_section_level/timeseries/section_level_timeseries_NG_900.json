@@ -1,0 +1,16 @@
+{
+"EXPLORATION GEOPHYSICS": [1,1,1,2,2,2,0,1,0,0,0,0,0,1,0,0,0],
+"Computational methods: seismic": [2,2,0,1,0,2,5,1,1,2,0,0,2,0,0,0,0],
+"Computational methods: potential fields": [1,1,0,0,0,0,1,1,1,0,0,0,1,2,0,0,0],
+"Continental structures": [0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0],
+"Data processing": [2,3,2,4,3,3,2,1,2,0,1,0,3,1,0,0,0],
+"Downhole methods": [0,0,0,0,1,2,1,1,0,1,0,0,1,1,0,0,0],
+"Gravity methods": [1,0,0,0,0,0,2,0,1,0,0,0,0,0,0,0,0],
+"Magnetic and electrical methods": [0,2,1,0,0,3,1,2,3,2,0,1,2,0,0,0,0],
+"Oceanic structures": [0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0],
+"Radioactivity methods": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+"Remote sensing": [2,3,2,1,2,0,1,1,2,0,0,0,0,0,0,0,0],
+"Seismic methods": [0,1,1,0,1,5,1,4,5,2,1,0,1,1,0,26,0],
+"Instruments and techniques": [0,0,0,0,3,2,1,2,1,0,0,0,0,0,0,0,0],
+"General or miscellaneous": [0,0,0,4,1,0,1,1,0,0,0,0,0,0,0,0,0]
+}

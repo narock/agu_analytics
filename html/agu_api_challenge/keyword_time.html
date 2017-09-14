@@ -1,0 +1,76 @@
+<html>
+  <head>
+
+    <!-- Load jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Load minified version of Bootstract -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+
+        <div style="padding:20px">
+          This interactive timeseries shows keyword usage over time. Hover over the chart to see a pop-up with data values. Clicking on a keyword in the legend removes it from the display. Clicking again returns it to the display.
+        </div>
+
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown button
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=300">Atmospheric Composition</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=400">Biogeosciences</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=500">Computational Geophysics</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=600">Electromagnetics</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=700">Cryosphere</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=800">Education</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=900">Exploration Geophysics</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=1000">Geochemistry</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=1100">Geocronology</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=1200">Geodesy and Gravity</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=1500">Geomagnetism and Paleomagnetism</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=1600">Global Change</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=1700">History of Geophysics</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=1800">Hydrology</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=1900">Informatics</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=2100">Interplanetary Physics</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=2400">Ionosphere</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=2700">Magnetospheric Physics</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=3000">Marine Geology and Geophysics</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=3200">Mathematical Geophysics</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=3300">Atmospheric Processes</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=3600">Mineralogy and Petrology</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=3900">Mineral Physics</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=4200">Oceanography: General</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=4300">Natural Hazards</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=4400">Nonlinear Geophysics</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=4500">Oceanography: Physical</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=4800">Oceanography: Biological and Chemical</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=4900">Paleoceanography</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=5100">Physical Properties of Rocks</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=5200">Planetary Sciences: Astrobiology</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=5400">Planetary Sciences: Solid Surface Planets</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=5700">Planetary Sciences: Fluid Planets</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=6000">Planetary Sciences: Comets and Small Bodies</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=6200">Planetary Sciences: Solar System Objects</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=6300">Policy Sciences</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=6600">Public Issues</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=6900">Radio Sciences</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=7200">Seismology</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=7500">Solar Physics, Astrophysics, and Astronomy</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=7800">Space Plasma Physics</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=7900">Space Weather</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=8000">Structural Geology</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=8100">Tectonophysics</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=8400">Volcanology</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=9300">Geographic Location</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=9600">Information Related to Geologic Time</a></li>
+            <li><a class="dropdown-item" href="timeseries_keyword.php?topic=9800">General or Miscellaneous</a></li>
+          </ul>
+        </div>
+      
+	      <div id="chart"></div>
+
+ </body>
+</html>

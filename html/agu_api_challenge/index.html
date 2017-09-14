@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <!-- Load jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Load minified version of Bootstract -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  </head>
+  <body>
+
+    <div class="container" style="padding-top:50px">
+
+      <div class="panel panel-default">
+        <h3>&nbsp;&nbsp;How Would You Like to Explore the AGU Data?</h3>
+        <div class="panel-body">
+          <button type="button" class="btn btn-lg btn-primary" onclick="location.href = 'keyword.html';">
+             By Keyword
+          </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" class="btn btn-lg btn-primary" onclick="location.href = 'author.html';">
+             By Author
+          </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" class="btn btn-lg btn-primary" onclick="location.href = 'abstract.html';">
+             By Abstract Text
+          </button>
+        </div>
+      </div>
+
+      <div style="padding-top:75px">
+        <h3>Acknowledgements</h3>
+        <p>In addition to the AGU's Open API, we'd like to acknowledge usage of the following data sources in the building of this application</p>
+        <ul>
+          <li><a href="http://www.geolink.org/">The GeoLink Project</a></li>
+          <li><a href="http://abstractsearch.agu.org/about/lod">AGU Abstract Browser Linked Data</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </body>
+</html>
