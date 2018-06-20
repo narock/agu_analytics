@@ -9,7 +9,7 @@ files = ["2000keyDict.csv", "2001keyDict.csv","2002keyDict.csv", "2003keyDict.cs
          "2004keyDict.csv", "2005keyDict.csv", "2006keyDict.csv", "2007keyDict.csv",
          "2008keyDict.csv", "2009keyDict.csv", "2010keyDict.csv", "2011keyDict.csv",
          "2012keyDict.csv", "2013keyDict.csv", "2014keyDict.csv", "2015keyDict.csv",
-         "2016keyDict.csv"] 
+         "2016keyDict.csv", "2017keyDict.csv"] 
 
 # the range of keywords we're interested in
 # for instance, 1600 to 1699 if we want to limit the results to Global Change

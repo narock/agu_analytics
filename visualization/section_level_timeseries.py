@@ -28,7 +28,8 @@ def timeSeries ( topicStart, topicStop, sectionID ):
     f15 = d + "2014keyword.csv"
     f16 = d + "2015keyword.csv"
     f17 = d + "2016keyword.csv"
-    files = [f01, f02, f03, f04, f05, f06, f07, f08, f09, f10, f11, f12, f13, f14, f15, f16, f17]
+    f18 = d + "2017keyword.csv"
+    files = [f01, f02, f03, f04, f05, f06, f07, f08, f09, f10, f11, f12, f13, f14, f15, f16, f17, f18]
 
     keywords2000 = {}
     keywords2001 = {}
@@ -47,9 +48,10 @@ def timeSeries ( topicStart, topicStop, sectionID ):
     keywords2014 = {}
     keywords2015 = {}
     keywords2016 = {}
+    keywords2017 = {}
     allDicts = [keywords2000, keywords2001, keywords2002, keywords2003, keywords2004, keywords2005, keywords2006,
             keywords2007, keywords2008, keywords2009, keywords2010, keywords2011, keywords2012, keywords2013,
-            keywords2014, keywords2015, keywords2016]
+            keywords2014, keywords2015, keywords2016, keywords2017]
     
     for f in files:
 
@@ -115,6 +117,8 @@ def timeSeries ( topicStart, topicStop, sectionID ):
                     updateDictionary( keywords2015, keywordName )
                 if ( year == "2016" ):
                     updateDictionary( keywords2016, keywordName )
+                if ( year == "2017" ):
+                    updateDictionary( keywords2017, keywordName )
 
     f = open("section_level_timeseries_" + str(sectionID) + "_" + str(topicStart) + ".json", 'w')
     f.write("{\n")
@@ -146,7 +150,7 @@ def timeSeries ( topicStart, topicStop, sectionID ):
     keyfile.close()
 
 sections = {"A":"Atmospheric Sciences", "AE":"Atmospheric and Space Electricity", "B":"Biogeosciences", "C":"Cryosphere",
-            "DI":"Study of the Earth's Deep Interior","ED":"Education and Human Resources",
+            "DI":"Study of the Earth's Deep Interior", "ED":"Education and Human Resources",
             "EP":"Earth and Planetary Surface Processes", "G":"Geodesy", "GC":"Global Environment Change",
             "GP":"Geomagnetism and Paleomagnetism", "H":"Hydrology", "IN":"Earth and Space Science Informatics",
             "MR":"Mineral and Rock Physics", "NG":"Nonlinear Geophysics", "NH":"Natural Hazards",
