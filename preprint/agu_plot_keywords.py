@@ -1,12 +1,21 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import csv
+from label_lines import *
 
-def zero_to_nan(values):
-    """Replace every 0 with 'nan' and return a copy."""
-    return [float('nan') if x==0 else x for x in values]
+def zero_to_one(values):
+    r = []
+    for i in values:
+      if ( i==0 ):
+        r.append(1)
+      else:
+        r.append(i)
+    return r
 
-inDir = '/Users/narock/Desktop/AGU_Graph/keyword_totals/totals_'
+    #"""Replace every 0 with 'nan' and return a copy."""
+    #return [float('nan') if x==0 else x for x in values]
+
+inDir = '/directory/to/data/'
 
 keywordGroups = ["300", "400", "500", "700", "800", "900", "1000", "1100", "1200", "1500",
                  "1600", "1700", "1800", "1900", "2100", "2400", "2700", "3000", "3200", "3300",
@@ -46,13 +55,14 @@ for group in keywordGroups:
         reader = csv.reader(f)
         sections = list(reader)
         for s in sections:
-            y = list(s)
-            section = y.pop(0)
-            y = list(map(int, y))
-            y = zero_to_nan( y )
-            if np.nanmax(y) > 100: # ignores nan, max() does not
+              y = list(s)
+              section = y.pop(0)
+              y = list(map(int, y))
+              if np.nanmax(y) > 100: # ignores nan, max() does not
+                y = zero_to_one( y )
                 plt.plot(x,y,label=section)
-        plt.legend()
+                labelLines(plt.gca().get_lines(),zorder=2.5)
+        #plt.legend()
         plt.show()
     f.close()
 

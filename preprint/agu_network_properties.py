@@ -17,18 +17,17 @@ def ccs(graph):
               
 def main():
 
-    d_raw = "/Users/narock/Desktop/AGU_Graph/"
-    d_dis = "/Users/narock/Desktop/AGU_Graph/disambiguated/"
+    d_raw = "/data/directory/"
+    d_dis = "/data/directory/disambiguated/"
 
     sections = ["A", "AE", "B", "C", "DI", "ED", "EP", "G", "GC", "GP", "H", "IN","MR",
                 "NG","NH", "NS","OS", "P", "PA", "PP", "S", "SA", "SH","SM","T","U","V"]
-     
-    years = ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", 
-             "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"]
+    
+    years = ["2017"] 
+    #years = ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", 
+    #         "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"]
     
     for section in sections:
-
-        #print(section)
         
         for year in years:
 
@@ -63,9 +62,8 @@ def main():
                     numCCS_dis, smallest_dis, largest_dis, numSingleNode_dis = ccs(G_dis)
 
                     #print(nx.density(G_raw))
-                    #print(nx.average_clustering(G_raw, count_zeros=True))
                     #print(nx.density(G_dis))
-                    print(numSingleNode_dis)
+                    print(section, nx.number_of_nodes(G_dis), numCCS_dis, round((largest_dis/nx.number_of_nodes(G_dis))*100.,1), round((numSingleNode_dis/nx.number_of_nodes(G_dis))*100.,1))
                     #print(nx.average_clustering(G_dis, count_zeros=True))
 
                     nodeFile1.close()
